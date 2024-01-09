@@ -1,0 +1,48 @@
+{
+  "bookSourceGroup": "❤小说,☀其一",
+  "bookSourceName": "一米小说yimixs",
+  "bookSourceType": 0,
+  "bookSourceUrl": "http://www.yimixs.cc",
+  "customOrder": 14,
+  "enabled": true,
+  "enabledCookieJar": true,
+  "enabledExplore": false,
+  "exploreUrl": "玄幻奇幻::/xuanhuan?order=allvisit&page={{page}}\n武侠仙侠::/xianxia?order=allvisit&page={{page}}\n都市言情::/dushi?order=allvisit&page={{page}}\n历史军事::/lishi?order=allvisit&page={{page}}\n科幻传奇::/kehuan?order=allvisit&page={{page}}\n恐怖灵异::/kongbu?order=allvisit&page={{page}}\n其他类型::/qita?order=allvisit&page={{page}}",
+  "lastUpdateTime": 1703821488203,
+  "respondTime": 180000,
+  "ruleBookInfo": {
+    "intro": "class.desc@text",
+    "kind": "class.summary@class.info clearfix@tag.li.0@a@text",
+    "tocUrl": "class.total@a@href",
+    "wordCount": "class.summary@class.info clearfix@tag.li.1@text##字数："
+  },
+  "ruleContent": {
+    "content": "class.article-body@html"
+  },
+  "ruleExplore": {
+    "author": "class.info@a.1@text",
+    "bookList": "class.book_list lazyload_box@class.clearfix@tag.li",
+    "bookUrl": "class.info@a.0@href",
+    "coverUrl": "class.imgbox@a@img@src",
+    "intro": "class.desc@text",
+    "lastChapter": "class.info@a.2@text",
+    "name": "class.info@a.0@text"
+  },
+  "ruleReview": {},
+  "ruleSearch": {
+    "author": "class.info@tag.span.0@text",
+    "bookList": "class.clearfix lazyload_box@tag.li",
+    "bookUrl": "class.info@a.0@href",
+    "coverUrl": "class.imgbox@a@img@src",
+    "intro": "class.desc@text",
+    "lastChapter": "class.info@tag.span.1@text",
+    "name": "class.info@a.0@text"
+  },
+  "ruleToc": {
+    "chapterList": "class.bd@class.catalog_list clearfix@tag.li@a",
+    "chapterName": "text",
+    "chapterUrl": "href"
+  },
+  "searchUrl": "/search,{\n\t\"body\":\"_token=EcJrzYdhtjn8OT3ahaTSYqR7GcQULEVGhc8MPIqB&search_type=&keyword={{key}}\",\n\t\"charset\":\"utf-8\",\n\t\"method\":\"post\",\n\t\"headers\":{\"Content-Type\":\"application/x-www-form-urlencoded\"}}",
+  "weight": 0
+}

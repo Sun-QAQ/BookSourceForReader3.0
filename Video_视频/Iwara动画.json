@@ -1,0 +1,43 @@
+{
+    "bookSourceComment": "使用了阅读自带的加密方法，可参考。",
+    "bookSourceGroup": "?其一,?视频,?科学",
+    "bookSourceName": "?iwara动画",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.iwara.tv##SUN",
+    "customOrder": -229,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n    {\n        \"title\": \"HMV\",\n        \"url\": \"https://api.iwara.tv/videos?tags=hmv&sort=date&page={{page-1}}&rating=all\",\n        \"style\": {\n            \"layout_flexBasisPercent\": 0.25,\n            \"layout_flexGrow\": 1\n        }\n    },\n    {\n        \"title\": \"virt_a_mate\",\n        \"url\": \"https://api.iwara.tv/videos?tags=virt_a_mate&sort=date&page={{page-1}}&rating=all\",\n        \"style\": {\n            \"layout_flexBasisPercent\": 0.25,\n            \"layout_flexGrow\": 1\n        }\n    },\n    {\n        \"title\": \"honey_select\",\n        \"url\": \"https://api.iwara.tv/videos?tags=honey_select&sort=date&page={{page-1}}&rating=all\",\n        \"style\": {\n            \"layout_flexBasisPercent\": 0.25,\n            \"layout_flexGrow\": 1\n        }\n    },\n    {\n        \"title\": \"原神\",\n        \"url\": \"https://api.iwara.tv/search?type=video&page={{page-1}}&query=原神\",\n        \"style\": {\n            \"layout_flexBasisPercent\": 0.25,\n            \"layout_flexGrow\": 1\n        }\n    }\n]",
+    "lastUpdateTime": 1701403105193,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "init": "",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "$.[-2].src.view\n@js:\nresult=\"https://\"+result\n\tif(book.durChapterIndex==chapter.index){\n\t\t\tjava.startBrowser(result,title)\n\t\t\tjava.toast('正在加载视频\\n视频加载较慢，请耐心等待')\n\t}\n'<p>【刷新正文】播放<br>或者【点击章节链接】跳转到浏览器播放</p>'"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "user.name",
+      "bookList": "$.results.[*]",
+      "bookUrl": "<js>\"https://api.iwara.tv/video/\"+\"@get:{rid}\"</js>",
+      "checkKeyWord": "甘雨",
+      "coverUrl": "<js>\"https://i.iwara.tv/image/thumbnail/\"+\"@get:{fid}\"+\"/thumbnail-10.jpg\"</js>",
+      "intro": "body",
+      "kind": "slug",
+      "lastChapter": "",
+      "name": "$.title",
+      "wordCount": "@put:{name:$.title}\n@put:{fid:$.file.id}\n@put:{rid:$.id}\n@put:{slug:$.slug}"
+    },
+    "ruleToc": {
+      "chapterList": "$..fileUrl",
+      "chapterName": "@get:{name}",
+      "chapterUrl": "$\n<js>\nvar regex1 = /https?:\\/\\/files\\.iwara\\.tv\\/file\\/([a-zA-Z0-9\\-]+)\\?.*/;  \nvar regex2 = /https?:\\/\\/files\\.iwara\\.tv\\/file\\/[a-zA-Z0-9\\-]+\\?expires=([0-9]+)&hash=[a-zA-Z0-9]+/;  \nvar match1 = result.match(regex1);\nvar fileid = match1[1];\nvar match2 = result.match(regex2);\nvar expireid = match2[1];\nvar shakey = '5nFp9kmbNnHdAFhaqMvt';\nvar mingstr = `${fileid}_${expireid}_${shakey}`;\nvar mistr = java.digestHex(mingstr,'sha1');\nresult = result + \",\\{\\\"headers\\\":\\{\\\"X-Version\\\":\\\"\" + mistr + \"\\\"\\}\\}\";\n</js>",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "https://api.iwara.tv/search?type=video&page={{page-1}}&query={{key}}",
+    "weight": 0
+  }

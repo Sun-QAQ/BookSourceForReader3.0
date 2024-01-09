@@ -1,0 +1,37 @@
+{
+  "bookSourceComment": "地址发布页:https://www.ai2cy.com",
+  "bookSourceGroup": "☀其一",
+  "bookSourceName": "i社中国aisecy",
+  "bookSourceType": 2,
+  "bookSourceUrl": "https://www.aisecy.com",
+  "customOrder": 26,
+  "enabled": true,
+  "enabledCookieJar": true,
+  "enabledExplore": false,
+  "exploreUrl": "热门::/quanbu/page/{{page}}?c2=19&c3&c4&t",
+  "lastUpdateTime": 1704349173676,
+  "loginUrl": "https://www.aisecy.com",
+  "respondTime": 180000,
+  "ruleBookInfo": {},
+  "ruleContent": {
+    "content": "class.article-content clearfix@html&&class.article-content clearfix@tag.h2@a@href##常见问题.*|新手必看.*|点击打开.*|新手看一遍.*|关于解压密码.*|关于APP!",
+    "imageStyle": "full",
+    "replaceRegex": "##(https\\:\\/\\/(?:www.ai2cy.com|www.aisacg.com)(.+)(?:jpg|gif))##<img src=\"$1,{\"headers\":{\"Referer\":\"https://www.aisecy.com/\"}}\">"
+  },
+  "ruleExplore": {},
+  "ruleReview": {},
+  "ruleSearch": {
+    "bookList": "class.post grid",
+    "bookUrl": "class.img@a@href",
+    "checkKeyWord": "姐姐",
+    "coverUrl": "class.img@a@img@data-src",
+    "kind": "class.cat@a@text",
+    "name": "class.img@a@title"
+  },
+  "ruleToc": {
+    "chapterList": "tag.title",
+    "chapterName": "{{book.name}}"
+  },
+  "searchUrl": "/page/{{page}}?s={{key}}&cat",
+  "weight": 0
+}

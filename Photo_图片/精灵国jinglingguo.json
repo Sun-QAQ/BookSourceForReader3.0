@@ -1,0 +1,37 @@
+{
+    "bookSourceComment": "网站搜索失效，需要登录",
+    "bookSourceGroup": "?其一,?资料",
+    "bookSourceName": "精灵国jinglingguo-图片",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.jinglingdu.com#图片",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "评分最高::/pic/{{page}}?sort=good\n人气最多::/pic/{{page}}?sort=hot\n最近入库::/pic/{{page}}?sort=new",
+    "header": "",
+    "lastUpdateTime": 1701414713957,
+    "loginUrl": "https://www.jinglingdu.com/member/login",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": "class.list_item list_itemm@class.mod_name@a@text"
+    },
+    "ruleContent": {
+      "content": "class.mod_item_countent.0@html",
+      "imageStyle": "full"
+    },
+    "ruleExplore": {
+      "bookList": "class.index-list@tag.li",
+      "bookUrl": "class.title-a@a@href",
+      "coverUrl": "class.imgbox@img@data-original",
+      "lastChapter": "class.t-span@text",
+      "name": "class.title-a@a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {},
+    "ruleToc": {
+      "chapterList": "title",
+      "chapterName": "{{book.name}}"
+    },
+    "weight": 0
+  }

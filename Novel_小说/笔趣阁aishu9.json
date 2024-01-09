@@ -1,0 +1,59 @@
+{
+    "bookSourceComment": "//目录有点乱",
+    "bookSourceGroup": "?其一,?小说",
+    "bookSourceName": "笔趣阁aishu9",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.aishu9.com#sun",
+    "customOrder": 3985,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "玄幻魔法::/xclass/1/{{page}}.html\n仙侠修真::/xclass/2/{{page}}.html\n都市言情::/xclass/3/{{page}}.html\n网友动漫::/xclass/4/{{page}}.html\n科幻小说::/xclass/5/{{page}}.html\n恐怖灵异::/xclass/6/{{page}}.html\n其他小说::/xclass/7/{{page}}.html\n完本小说::/quanben.html",
+    "lastUpdateTime": 1698830618783,
+    "respondTime": 6942,
+    "ruleBookInfo": {
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.content@html##(?<=[”。？！])(?=[“\\w])##<br>",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##(?<=“.{1,50}？)\\n\\s*(?=.*[”！？])|本章未完.*",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "class.s5@text",
+      "bookList": "class.l@tag.li",
+      "bookUrl": "class.s2@a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "class.s3@a@text",
+      "name": "class.s2@a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "class.odd.1@text",
+      "bookList": "id.nr",
+      "bookUrl": "class.odd.0@a@href",
+      "checkKeyWord": "深空彼岸",
+      "coverUrl": "class.odd.0@a@href\n<js>\njava.ajax('https://www.aishu9.com'+result)\n</js>\nid.sidebar@id.fmimg@img@src",
+      "intro": "class.odd.0@a@href\n<js>\njava.ajax('https://www.aishu9.com'+result)\n</js>\nid.intro@text",
+      "kind": "class.even.2@text",
+      "lastChapter": "class.even.0@text",
+      "name": "class.odd.0@a@text",
+      "wordCount": "class.even.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.box_con.1@id.list@tag.dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "/s.php,{\n\"method\":\"POST\",\n\"body\":\"searchkey={{key}}&searchtype=articlename\"\n} ",
+    "weight": 0
+  }

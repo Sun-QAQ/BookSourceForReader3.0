@@ -1,0 +1,48 @@
+{
+    "bookSourceComment": "*:..?((ε(*??ω?)っ?*?¨???*:..☆\n//使用需先登录，没有账号先注册，要下载需要进入原网页。\n//收藏和发现规则不一样，没在一块，查看收藏使用搜索。",
+    "bookSourceGroup": "?其一,?资料",
+    "bookSourceName": "ACG次元网",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://south.yuanacg.com#SUN",
+    "customOrder": -232,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "?游   戏::/forum-36-{{page}}.html\n?漫   画::/forum-37-{{page}}.html\n?动   画::/forum-39-{{page}}.html\n?小   说::/forum-49-{{page}}.html\n?补   档::/forum-47-{{page}}.html",
+    "lastUpdateTime": 1698637241169,
+    "loginUrl": "https://south.yuanacg.com/member.php?mod=logging&action=login&referer=https%3A%2F%2Fsouth.yuanacg.com%2Fforum.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.t_f.0@img.0@src"
+    },
+    "ruleContent": {
+      "content": "class.t_f.0@html##Sun-QAQ.*",
+      "imageStyle": "FULL",
+      "replaceRegex": "##(\\s\\shttps\\:(.+)(?:jpg|gif))##<img src=\\\"$1\\\">",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "bookList": "id.threadlisttableid@tag.tbody",
+      "bookUrl": "class.xst@href##$##,{\"webView\":true}",
+      "coverUrl": "class.xst@href\n<js>\njava.ajax('https://south.yuanacg.com/'+result)\n</js>\nclass.t_f.0@img.0@src",
+      "intro": "class.xst@text##.*【|】",
+      "kind": "class.xst@text##【|】.*",
+      "name": "class.xst@text##【.*?】"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": "id.delform@tag.li",
+      "bookUrl": "a.1@href##$##,{\"webView\":true}",
+      "checkKeyWord": "收藏",
+      "coverUrl": "a.1@href\n<js>java.ajax('https://south.yuanacg.com/'+result)</js>\nclass.t_f.0@img.0@src",
+      "intro": "",
+      "kind": "a.1@text##【|】.*",
+      "name": "a.1@text##【.*?】"
+    },
+    "ruleToc": {
+      "chapterList": "tag.title.0",
+      "chapterName": "text"
+    },
+    "searchUrl": "/home.php?mod=space&uid=1044731&do=favorite&type=all&page={{page}}",
+    "weight": 0
+  }

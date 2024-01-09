@@ -1,0 +1,39 @@
+{
+  "bookSourceComment": "需要cookie登录; 封面不显示，待调整",
+  "bookSourceGroup": "💜漫画,☀其一",
+  "bookSourceName": "EH漫画exhentai",
+  "bookSourceType": 2,
+  "bookSourceUrl": "https://exhentai.org",
+  "customOrder": 0,
+  "enabled": true,
+  "enabledCookieJar": true,
+  "enabledExplore": false,
+  "exploreUrl": "流行::/popular",
+  "header": "{\"Cookie\":\"ipb_member_id=5113267; ipb_pass_hash=f7a38f0454b7f50e353ffbaf1beff8aa; igneous=2f91b2baf\"}",
+  "lastUpdateTime": 1704697753507,
+  "respondTime": 180000,
+  "ruleBookInfo": {
+    "tocUrl": "id.gdt@class.gdtm.0@a@href"
+  },
+  "ruleContent": {
+    "content": "id.i3@a@img@src",
+    "imageStyle": "full",
+    "nextContentUrl": "class.sn.0@id.next@href",
+    "replaceRegex": "##(https\\:(.+)(?:jpg|gif))##<img src=\\\"$1\\\">"
+  },
+  "ruleExplore": {},
+  "ruleReview": {},
+  "ruleSearch": {
+    "bookList": "class.itg gltc@tag.tr.!0||class.gl1t",
+    "bookUrl": "class.gl3c glname@a@href||class.gl1t@a@href",
+    "coverUrl": "class.glthumb@img@src||class.gl3t@a@img@src##$##, {\n    \"headers\":{\n        \"Host\":\"s.exhentai.org\",\n        \"Pragma\":\"no-cache\",\n        \"sec-ch-ua-mobile\":\"?0\",\n        \"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0\",\n        \"sec-ch-ua-platform\":\"\"Windows\"\",\n        \"Accept\":\"image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8\",\n        \"Sec-Fetch-Site\":\"same-site\",\n        \"Sec-Fetch-Mode\":\"no-cors\",\n        \"Sec-Fetch-Dest\":\"image\",\n        \"Referer\":\"https://exhentai.org/\"\n    },\n    \"method\":\"get\"\n}",
+    "kind": "class.gt@text",
+    "name": "class.glink@text||class.gl4t glname glink@a@text"
+  },
+  "ruleToc": {
+    "chapterList": "title",
+    "chapterName": "{{book.name}}"
+  },
+  "searchUrl": "/?f_search={{key}}, {\n    \"headers\":{\n        \"Accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\",\n        \"Sec-Ch-Ua-Platform\":\"Windows\",\n        \"Referer\":\"https://exhentai.org/\",\n        \"Host\":\"exhentai.org\",\n    }\n}",
+  "weight": 0
+}
